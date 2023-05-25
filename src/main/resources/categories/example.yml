@@ -12,7 +12,7 @@ name: "&6Example Category"
 # The message when an achievement is completed
 achievement-completed:
   - ""
-  - "<gradient:#439cfb:#4766f4><bold>ACHIEVEMENT</bold></gradient> <white>┃ Achievement accomplished <>green✔"
+  - "<gradient:#439cfb:#4766f4><bold>ACHIEVEMENT</bold></gradient> <white>┃ Achievement accomplished <green>✔"
   - "<white>Title: %achievement%"
   - ""
 
