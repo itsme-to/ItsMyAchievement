@@ -1,0 +1,17 @@
+name: ${pluginName}
+version: ${version}
+main: ru.oftendev.itsmyachievement.ItsMyAchievement
+api-version: 1.18
+
+dependencies:
+  - name: eco
+    required: true
+    bootstrap: false
+
+  - name: libreforge
+    required: false
+    bootstrap: false
+
+load-after:
+  - name: eco
+    bootstrap: false

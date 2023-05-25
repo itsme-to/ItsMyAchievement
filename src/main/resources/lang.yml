@@ -1,0 +1,32 @@
+messages:
+  prefix: "<gradient:#ef709b:#fa9372><bold>ACHIEVEMENT</bold></gradient> <white>┃ "
+  no-permission: "You don't have permission to do this!"
+  not-player: "This command must be run by a player"
+  invalid-command: "Unknown subcommand!"
+  reloaded: "Reloaded!"
+  requires-player: "You must specify a player!"
+  invalid-player: "Invalid player!"
+  requires-category: "You must specify a category"
+  invalid-category: "Invalid category!"
+  requires-achievement: "You must specify an achievement"
+  invalid-achievement: "Invalid achievement!"
+  achievement-reset: "You have reset %achievement%<white> from %category%<white> for <aqua>%player%"
+  achievement-complete: "You have completed %achievement%<white> from %category%<white> for <aqua>%player%"
+
+help:
+  - ""
+  - "<gradient:#ef709b:#fa9372><bold>ACHIEVEMENT</bold></gradient> <white>┃ List of commands"
+  - ""
+  - "<yellow>/itsmyachievement reload <gray>- <white>reloads the plugin and it's configuration"
+  - "<yellow>/itsmyachievement help <gray>- <white>show this message"
+  - "<yellow>/itsmyachievement info <category> <player> <gray>- <white>display category info of a player"
+  - "<yellow>/itsmyachievement reset <category> <achievement> <player> <gray>- <white>reset an achievement for player"
+  - "<yellow>/itsmyachievement complete <category> <achievement> <player> <gray>- <white>complete an achievement for player"
+  - ""
+
+category-info:
+  - ""
+  - "<gradient:#ef709b:#fa9372><bold>ACHIEVEMENT</bold></gradient> <white>┃ Achievement <aqua>%player% <gray>[%current%/%total%]"
+  - ""
+  - "<white> ▪ %achievement%"
+  - ""

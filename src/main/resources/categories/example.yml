@@ -1,0 +1,114 @@
+  # The ID of the category is the name of the .yml file,
+  # for example survival.yml has the ID of survival
+  # You can place category anywhere in this folder,
+  # including in subfolders if you want to organize your category configs
+
+  # Activate or deactivate the category
+  enabled: true
+
+  # The display name of the category
+  name: "&6Example Category"
+
+  # The message when an achievement is completed
+  achievement-completed:
+    - ""
+    - "<gradient:#ef709b:#fa9372><bold>ACHIEVEMENT</bold></gradient> <white>┃ Achievement accomplished <>green✔"
+    - "<white>Title: %achievement%"
+    - ""
+
+  gui:
+    # The commands for open the category gui
+    commands:
+      - exampleachivements
+
+    # The title of the gui
+    title: "Example Category"
+
+    mask:
+      # The way the mask works is by having a list of materials
+      # And then a pattern to use those materials.
+
+      # The pattern is the rows in the GUI
+      # Each line must be 9 long, and the amount of rows should be the amount of rows in the GUI
+      # A zero represents nothing
+      # A 1 represents the first material
+      # A 2 represents the second material
+      # And so on, you can add up to 9.
+      materials:
+        - black_stained_glass_pane
+      pattern:
+        - "111111111"
+        - "000000000"
+        - "000000000"
+        - "000000000"
+        - "000000000"
+        - "111101111"
+
+    buttons:
+      scroll-pane:
+        empty-item: stone name:&8Empty
+        row: 3
+        column: 2
+        height: 2
+        width: 7
+      page-change:
+        forwards:
+          row: 6
+          column: 6
+          item: arrow name:'&aNext Page'
+        backwards:
+          row: 6
+          column: 4
+          item: arrow name:'&6Previous Page'
+      close:
+        item: barrier
+        row: 6
+        column: 5
+
+      # Custom GUI slots; see here for a how-to: https://docs.itsme.to/custom-gui-slots
+      custom-slots: []
+
+  achievements:
+
+    - id: example_achievement #The id of the achievement
+      name: "&aExample achievement" #The display name of the achievement
+      gui:
+        display: true #Activate if you want to see the achievement in the gui
+
+        locked:
+          item: gray_dye
+          name: "&cExample achievement"
+          lore:
+            - "&7Break &b50 &fstone&7."
+            - ""
+            - "&8Progress: &6%goal_break_blocks_current%&8/&6%goal_break_blocks%"
+            - ""
+            - "&8Insight:"
+            - "&b%complete_percent%% &7of players have"
+            - "&7unlocked this achievement."
+
+        unlocked:
+          item: lime_dye
+          name: "&aExample achievement"
+          lore:
+            - "&7Break &b50 &fstone&7."
+            - ""
+            - "&8Insight:"
+            - "&b%complete_percent%% &7of players have"
+            - "&7unlocked this achievement."
+            - ""
+            - "&aCompleted ✔ &7(%complete_date%)"
+
+      #Use reward id from rewards.yml
+      rewards:
+        - "example_reward"
+
+      # Trigger system; see here for a how-to: https://docs.itsme.to/trigger-system
+      goals:
+        - id: break_blocks
+          trigger: execute_command
+          filters:
+            command:
+              - "store"
+          conditions: []
+          goal: 50

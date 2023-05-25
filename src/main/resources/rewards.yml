@@ -1,0 +1,8 @@
+rewards:
+  - id: "example_reward"
+    commands:
+      - "eco give %player% 100"
+    player-commands:
+      - "say I have completed an achievement!"
+    items:
+      - "diamond 64"

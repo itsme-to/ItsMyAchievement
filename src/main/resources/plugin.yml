@@ -1,0 +1,14 @@
+name: ${pluginName}
+version: ${version}
+main: ru.oftendev.itsmyachievement.ItsMyAchievement
+author: _OfTeN_
+api-version: 1.19
+depend:
+  - eco
+softdepend:
+  - BentoBox
+  - FactionsUUID
+  - HuskTowns
+  - SuperiorSkyblock2
+commands:
+  itsmyachievement:
