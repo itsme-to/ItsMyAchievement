@@ -1,5 +1,5 @@
 messages:
-  prefix: "<gradient:#ef709b:#fa9372><bold>ACHIEVEMENT</bold></gradient> <white>┃ "
+  prefix: "<gradient:#439cfb:#4766f4><bold>ACHIEVEMENT</bold></gradient> <white>┃ "
   no-permission: "You don't have permission to do this!"
   not-player: "This command must be run by a player"
   invalid-command: "Unknown subcommand!"
@@ -15,7 +15,7 @@ messages:
 
 help:
   - ""
-  - "<gradient:#ef709b:#fa9372><bold>ACHIEVEMENT</bold></gradient> <white>┃ List of commands"
+  - "<gradient:#439cfb:#4766f4><bold>ACHIEVEMENT</bold></gradient> <white>┃ List of commands"
   - ""
   - "<yellow>/itsmyachievement reload <gray>- <white>reloads the plugin and it's configuration"
   - "<yellow>/itsmyachievement help <gray>- <white>show this message"
@@ -26,7 +26,7 @@ help:
 
 category-info:
   - ""
-  - "<gradient:#ef709b:#fa9372><bold>ACHIEVEMENT</bold></gradient> <white>┃ Achievement <aqua>%player% <gray>[%current%/%total%]"
+  - "<gradient:#439cfb:#4766f4><bold>ACHIEVEMENT</bold></gradient> <white>┃ Achievement <aqua>%player% <gray>[%current%/%total%]"
   - ""
   - "<white> ▪ %achievement%"
   - ""
