@@ -16,6 +16,7 @@ class AchievementGoal(val parent: Achievement, config: Config, context: String):
             workConfig.set("multiplier", 1.0)
         }
     }
+
     val goal = workConfig.getDouble("goal")
     private val counter = Counters.compile(config, ViolationContext(ItsMyAchievement.instance, context))
     private val countValue = workConfig.separatorAmbivalent().getDoubleOrNull("static-value")
