@@ -22,6 +22,7 @@ class AchievementGoal(val parent: Achievement, config: Config, context: String):
 
     override fun accept(player: Player, count: Double) {
         if (count <= 0.0) return
+        if (player.hasComplete(parent)) return
         player.incrementGoal(parent, this, countValue ?: count)
     }
 
